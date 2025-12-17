@@ -122,7 +122,7 @@ jobs:
       # ⎈ HELM DEPLOY (REAL CLUSTER)
       - name: Helm Deploy to EKS
         run: |
-          helm upgrade --install laravel helm/laravel-app \
-            -f helm/laravel-app/values-${ENV}.yaml \
+          helm upgrade --install laravel helm/laravel.app \
+            -f helm/laravel.app/values-${ENV}.yaml \
             --set image.repository=${{ secrets.DOCKERHUB_USERNAME }}/${IMAGE_NAME} \
             --set image.tag=${IMAGE_TAG}
