@@ -11,6 +11,10 @@ worker:
 image:
   pullPolicy: Always
 
+service:
+  type: LoadBalancer
+  port: 80
+
 ingress:
   enabled: true
   host: laravel.example.com
