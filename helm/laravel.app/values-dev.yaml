@@ -1,0 +1,12 @@
+env:
+  APP_ENV: development
+  APP_DEBUG: "true"
+
+php:
+  replicaCount: 1
+
+worker:
+  replicaCount: 1
+
+ingress:
+  enabled: false

@@ -1,0 +1,16 @@
+env:
+  APP_ENV: production
+  APP_DEBUG: "false"
+
+php:
+  replicaCount: 3
+
+worker:
+  replicaCount: 2
+
+image:
+  pullPolicy: Always
+
+ingress:
+  enabled: true
+  host: laravel.example.com

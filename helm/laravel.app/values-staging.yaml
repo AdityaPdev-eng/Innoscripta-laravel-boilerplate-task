@@ -1,0 +1,13 @@
+env:
+  APP_ENV: staging
+  APP_DEBUG: "false"
+
+php:
+  replicaCount: 2
+
+worker:
+  replicaCount: 1
+
+ingress:
+  enabled: true
+  host: staging.laravel.example.com
