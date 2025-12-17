@@ -1,5 +1,4 @@
 # Laravel 10 DevOps Assessment
-
 **Name:** Tushar
 **Email:** [your-email@example.com](mailto:your-email@example.com)
 
